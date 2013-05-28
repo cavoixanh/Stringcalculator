@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>TDDStringCalculator.xcscheme</key>
+		<key>StringCalculator.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5BDC2B1E17533E5900BBA0CD</key>
+		<key>5B0DD6F31754893700BACA3A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5BDC2B4417533E5A00BBA0CD</key>
+		<key>5B0DD7191754893800BACA3A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

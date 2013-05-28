@@ -1,18 +1,18 @@
 //
-//  ExtendedViewController.m
-//  TDDStringCalculator
+//  StringCalculatorViewController.m
+//  StringCalculator
 //
-//  Created by Truong Tran  The on 5/27/13.
+//  Created by Truong Tran  The on 5/28/13.
 //  Copyright (c) 2013 Thett. All rights reserved.
 //
 
-#import "ExtendedViewController.h"
+#import "StringCalculatorViewController.h"
 
-@interface ExtendedViewController ()
+@interface StringCalculatorViewController ()
 
 @end
 
-@implementation ExtendedViewController
+@implementation StringCalculatorViewController
 
 - (void)viewDidLoad
 {

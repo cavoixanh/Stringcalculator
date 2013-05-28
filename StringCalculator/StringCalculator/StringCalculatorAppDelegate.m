@@ -1,16 +1,16 @@
 //
-//  ExtendedAppDelegate.m
-//  TDDStringCalculator
+//  StringCalculatorAppDelegate.m
+//  StringCalculator
 //
-//  Created by Truong Tran  The on 5/27/13.
+//  Created by Truong Tran  The on 5/28/13.
 //  Copyright (c) 2013 Thett. All rights reserved.
 //
 
-#import "ExtendedAppDelegate.h"
+#import "StringCalculatorAppDelegate.h"
 
-#import "ExtendedViewController.h"
+#import "StringCalculatorViewController.h"
 
-@implementation ExtendedAppDelegate
+@implementation StringCalculatorAppDelegate
 
 - (void)dealloc
 {
@@ -23,7 +23,7 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.viewController = [[[ExtendedViewController alloc] initWithNibName:@"ExtendedViewController" bundle:nil] autorelease];
+    self.viewController = [[[StringCalculatorViewController alloc] initWithNibName:@"StringCalculatorViewController" bundle:nil] autorelease];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

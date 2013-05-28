@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5BDC2B1E17533E5900BBA0CD"
-               BuildableName = "TDDStringCalculator.app"
-               BlueprintName = "TDDStringCalculator"
-               ReferencedContainer = "container:TDDStringCalculator.xcodeproj">
+               BlueprintIdentifier = "5B0DD6F31754893700BACA3A"
+               BuildableName = "StringCalculator.app"
+               BlueprintName = "StringCalculator"
+               ReferencedContainer = "container:StringCalculator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5BDC2B4417533E5A00BBA0CD"
-               BuildableName = "TDDStringCalculatorTests.octest"
-               BlueprintName = "TDDStringCalculatorTests"
-               ReferencedContainer = "container:TDDStringCalculator.xcodeproj">
+               BlueprintIdentifier = "5B0DD7191754893800BACA3A"
+               BuildableName = "StringCalculatorTests.octest"
+               BlueprintName = "StringCalculatorTests"
+               ReferencedContainer = "container:StringCalculator.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5BDC2B1E17533E5900BBA0CD"
-            BuildableName = "TDDStringCalculator.app"
-            BlueprintName = "TDDStringCalculator"
-            ReferencedContainer = "container:TDDStringCalculator.xcodeproj">
+            BlueprintIdentifier = "5B0DD6F31754893700BACA3A"
+            BuildableName = "StringCalculator.app"
+            BlueprintName = "StringCalculator"
+            ReferencedContainer = "container:StringCalculator.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5BDC2B1E17533E5900BBA0CD"
-            BuildableName = "TDDStringCalculator.app"
-            BlueprintName = "TDDStringCalculator"
-            ReferencedContainer = "container:TDDStringCalculator.xcodeproj">
+            BlueprintIdentifier = "5B0DD6F31754893700BACA3A"
+            BuildableName = "StringCalculator.app"
+            BlueprintName = "StringCalculator"
+            ReferencedContainer = "container:StringCalculator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5BDC2B1E17533E5900BBA0CD"
-            BuildableName = "TDDStringCalculator.app"
-            BlueprintName = "TDDStringCalculator"
-            ReferencedContainer = "container:TDDStringCalculator.xcodeproj">
+            BlueprintIdentifier = "5B0DD6F31754893700BACA3A"
+            BuildableName = "StringCalculator.app"
+            BlueprintName = "StringCalculator"
+            ReferencedContainer = "container:StringCalculator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
