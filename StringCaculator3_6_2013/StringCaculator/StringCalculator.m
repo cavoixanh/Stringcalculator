@@ -12,6 +12,7 @@
 
 -(NSInteger) Add :(NSString*) str{
     
+    str = [str stringByReplacingOccurrencesOfString:@"\n" withString:@","];
     NSArray * arr = [str componentsSeparatedByString:@","];
     NSInteger count;
     count = 0;
