@@ -11,6 +11,9 @@
 @implementation StringCalculator
 
 -(NSInteger) Add :(NSString*) str{
-
+    if([str isEqualToString:@""])
+        return 0;
+    
+    return 0;
 }
 @end
