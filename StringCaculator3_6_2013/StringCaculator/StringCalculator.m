@@ -18,6 +18,8 @@
     str = [str stringByReplacingOccurrencesOfString:@"[" withString:@""];
     str = [str stringByReplacingOccurrencesOfString:@"]" withString:@""];
     str = [str stringByReplacingOccurrencesOfString:@"***" withString:@","];
+    str = [str stringByReplacingOccurrencesOfString:@"*" withString:@","];
+    str = [str stringByReplacingOccurrencesOfString:@"%" withString:@","];
     
     NSArray * arr = [str componentsSeparatedByString:@","];
     
