@@ -28,7 +28,8 @@
                             format:@"negatives not allowed"];
                 assert(@"negatives not allowed");
             }
-            count = count+ [string integerValue];
+            if([string integerValue] <= 1000)
+                count = count+ [string integerValue];
         }
         return count;
     }

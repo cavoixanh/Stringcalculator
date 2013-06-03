@@ -38,6 +38,7 @@
     STAssertEquals([a Add:@"//;\n1;2"], 3, @"nhieu ptu dac biet");
     
     STAssertThrows([a Add:@"-1,2"], @"so am");
+    STAssertEquals([a Add:@"2,1001"], 2, @"lon hon 1000");
     
 }
 
