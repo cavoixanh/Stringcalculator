@@ -33,6 +33,7 @@
     
     STAssertEquals([a Add:@""], 0, @"P tu rong");
     STAssertEquals([a Add:@"1,2"], 3, @"2 ptu");
+    STAssertEquals([a Add:@"1,2,3"], 6, @"nhieu ptu");
 }
 
 @end
