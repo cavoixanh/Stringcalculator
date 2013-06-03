@@ -15,7 +15,10 @@
     str = [str stringByReplacingOccurrencesOfString:@"\n" withString:@","];
     str = [str stringByReplacingOccurrencesOfString:@"//" withString:@""];
     str = [str stringByReplacingOccurrencesOfString:@";" withString:@","];
+    
+    
     NSArray * arr = [str componentsSeparatedByString:@","];
+    
     NSInteger count;
     count = 0;
     if([str isEqualToString:@""])
