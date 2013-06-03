@@ -23,6 +23,11 @@
     else
     {
         for(NSString * string in arr){
+            if([string integerValue] < 0){
+                [NSException raise:NSInvalidArgumentException
+                            format:@"negatives not allowed"];
+                assert(@"negatives not allowed");
+            }
             count = count+ [string integerValue];
         }
         return count;
