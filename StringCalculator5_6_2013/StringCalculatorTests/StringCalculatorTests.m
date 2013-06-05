@@ -38,6 +38,7 @@
     
     STAssertEquals([a Add:@"2,1003"], 2, @"lon hon 1000");
     STAssertEquals([a Add:@"2,1000"], 1002, @"lon hon 1000");
+    
 }
 
 @end
