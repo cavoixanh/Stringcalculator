@@ -25,7 +25,13 @@
         addString = [addString stringByReplacingOccurrencesOfString:key withString:@","];
         NSArray *arr = [addString componentsSeparatedByString:@","];
         for(NSString *string in arr){
-            count = count + [string integerValue];
+            if([string integerValue] >0)
+                count = count + [string integerValue];
+//            else{
+//                [NSException raise:NSInvalidArgumentException
+//                            format:@"negatives not allowed"];
+//            assert(@"negatives not allowed");
+//            }
         }
         return count;
     }
@@ -37,7 +43,13 @@
         return 0;
     else{
         for(NSString *string in arr){
-            count = count + [string integerValue];
+            if([string integerValue] >0)
+                count = count + [string integerValue];
+            else{
+                [NSException raise:NSInvalidArgumentException
+                            format:@"negatives not allowed"];
+                assert(@"negatives not allowed");
+            }
         }
         return count;
     }

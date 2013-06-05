@@ -33,6 +33,8 @@
     STAssertEquals([a Add:@"1\n2,3"], 6, @"ky tu \n");
     STAssertEquals([a Add:@"//;\n1;2"], 3, @"delemeter");
     STAssertEquals([a Add:@"//#\n1#2"], 3, @"delemeter");
+    
+    STAssertThrows([a Add:@"-3,4"], @"exception so am");
 }
 
 @end
