@@ -13,6 +13,7 @@
 - (NSInteger) Add:(NSString*) addString{
     
     //NSCharacterSet *character = ;
+    addString = [addString stringByReplacingOccurrencesOfString:@"\n" withString:@","];
     NSArray *arr = [addString componentsSeparatedByString:@","];
     NSInteger count;
     count = 0;

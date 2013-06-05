@@ -30,6 +30,7 @@
     STAssertEquals([a Add:@""], 0, @"ky tu rong");
     STAssertEquals([a Add:@"1,2"], 3, @"2 ky tu");
     STAssertEquals([a Add:@"1,2,3"], 6, @"nhieu ky tu");
+    STAssertEquals([a Add:@"1\n2,3"], 6, @"ky tu \n");
 }
 
 @end
