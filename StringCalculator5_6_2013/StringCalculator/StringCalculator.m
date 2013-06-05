@@ -11,9 +11,19 @@
 @implementation StringCalculator
 
 - (NSInteger) Add:(NSString*) addString{
-
+    
+    //NSCharacterSet *character = ;
+    NSArray *arr = [addString componentsSeparatedByString:@","];
+    NSInteger count;
+    count = 0;
     if([addString isEqualToString:@""])
         return 0;
+    else{
+        for(NSString *string in arr){
+            count = count + [string integerValue];
+        }
+        return count;
+    }
     
     return 0;
 }
