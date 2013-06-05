@@ -38,22 +38,17 @@
     
     
     NSArray *arr = [addString componentsSeparatedByString:@","];
-   
-    if([addString isEqualToString:@""])
-        return 0;
-    else{
-        for(NSString *string in arr){
-            if([string integerValue] >0)
+    for(NSString *string in arr){
+        if([string integerValue] >0 && [string integerValue] <1001)
                 count = count + [string integerValue];
-            else{
-                [NSException raise:NSInvalidArgumentException
+        else if ([string integerValue] >1000)
+            count = count+0;
+        else{
+            [NSException raise:NSInvalidArgumentException
                             format:@"negatives not allowed"];
-                assert(@"negatives not allowed");
-            }
+            assert(@"negatives not allowed");
         }
-        return count;
     }
-    
-    return 0;
+    return count;
 }
 @end
