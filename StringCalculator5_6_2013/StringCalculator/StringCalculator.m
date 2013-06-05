@@ -11,12 +11,28 @@
 @implementation StringCalculator
 
 - (NSInteger) Add:(NSString*) addString{
+    if([addString isEqualToString:@""])
+        return 0;
     
-    //NSCharacterSet *character = ;
-    addString = [addString stringByReplacingOccurrencesOfString:@"\n" withString:@","];
-    NSArray *arr = [addString componentsSeparatedByString:@","];
     NSInteger count;
     count = 0;
+    addString = [addString stringByReplacingOccurrencesOfString:@"\n" withString:@","];
+    
+    NSString *temp = [addString substringToIndex:3];
+    if([temp hasPrefix:@"//"]){
+        NSString *key = [temp stringByReplacingOccurrencesOfString:@"//" withString:@""];
+        addString = [addString substringFromIndex:2];
+        addString = [addString stringByReplacingOccurrencesOfString:key withString:@","];
+        NSArray *arr = [addString componentsSeparatedByString:@","];
+        for(NSString *string in arr){
+            count = count + [string integerValue];
+        }
+        return count;
+    }
+    
+    
+    NSArray *arr = [addString componentsSeparatedByString:@","];
+   
     if([addString isEqualToString:@""])
         return 0;
     else{
