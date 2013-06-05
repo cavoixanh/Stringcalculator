@@ -17,7 +17,10 @@
     str = [str stringByReplacingOccurrencesOfString:@"[" withString:@""];
     str = [str stringByReplacingOccurrencesOfString:@"]" withString:@""];
     str = [str stringByReplacingOccurrencesOfString:@"***" withString:@","];
+    str = [str stringByReplacingOccurrencesOfString:@"\\" withString:@""];
+    str = [str stringByReplacingOccurrencesOfString:@"#" withString:@","];
     NSArray *arr = [str componentsSeparatedByString:@","];
+
     
     NSInteger total;
     total = 0;
@@ -34,10 +37,8 @@
              if([string integerValue]<=1000)
              total = total + [string integerValue];
          }
-         
          return total;
      }
-     
     return 0;
 }
 @end
