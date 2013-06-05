@@ -31,6 +31,7 @@
     STAssertEquals([a Add:@"1,2"], 3, @"2 ky tu");
     STAssertEquals([a Add:@"1,2,3"], 6, @"nhieu ky tu");
     STAssertEquals([a Add:@"1\n2,3"], 6, @"ky tu \n");
+    STAssertEquals([a Add:@"//;\n1;2"], 3, @"delemeter");
 }
 
 @end
