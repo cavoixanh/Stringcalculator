@@ -12,6 +12,8 @@
 
 - (NSInteger) Add:(NSString *)stringAdd{
     
+    
+    
     if(stringAdd.length >3){
         NSString *stringTemp = [stringAdd substringToIndex:3];
         if([stringTemp hasPrefix:@"//"])
