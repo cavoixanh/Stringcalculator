@@ -28,6 +28,7 @@
 {
     StringCalculator *a = [[StringCalculator alloc] init];
     STAssertEquals([a Add:@""], 0, @"rong");
+    STAssertEquals([a Add:@"1,2"], 3, @"2 so");
 }
 
 @end
