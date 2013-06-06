@@ -32,6 +32,8 @@
     STAssertEquals([a Add:@"1,2,3"], 6, @"nhieu so so");
     STAssertEquals([a Add:@"1\n2,3"], 6, @"\n");
     STAssertEquals([a Add:@"//;\n1;2"], 3, @"delemeter");
+    
+    STAssertThrows([a Add:@"-1,2"], @"negatives not allowed");
 }
 
 @end
