@@ -30,8 +30,11 @@
         return 0;
     else{
         for(NSString * str in arr){
-            if([str integerValue] > 0)
+            if([str integerValue] > 0  )
                 count = count + [str integerValue];
+            else if ([str isEqualToString:@"//"] || [str isEqualToString:@""]){
+                count = count + 0;
+            }
             else{
                 [NSException raise:@"negatives not allowed" format:@"negatives not allowed"];
             }
