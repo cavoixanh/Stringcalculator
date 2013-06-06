@@ -30,6 +30,7 @@
     STAssertEquals([a Add:@""], 0, @"rong");
     STAssertEquals([a Add:@"1,2"], 3, @"2 so");
     STAssertEquals([a Add:@"1,2,3"], 6, @"nhieu so so");
+    STAssertEquals([a Add:@"1\n2,3"], 6, @"\n");
 }
 
 @end
