@@ -12,7 +12,14 @@
 
 - (NSInteger) Add:(NSString *)stringAdd{
     
-    if(stringAdd.length > 7){
+    if(stringAdd.length > 8  && [[stringAdd componentsSeparatedByString: @"["] count] == 3){
+       
+        NSString *key1 = [stringAdd substringWithRange:NSMakeRange(3, 1)];
+        NSString *key2 = [stringAdd substringWithRange:NSMakeRange(6, 1)];
+        stringAdd = [stringAdd stringByReplacingOccurrencesOfString:key1 withString:@","];
+        stringAdd = [stringAdd stringByReplacingOccurrencesOfString:key2 withString:@","];
+    }
+    else if(stringAdd.length > 7){
         NSString *stringTemp = [stringAdd substringToIndex:7];
         if([stringTemp hasPrefix:@"//["] && [stringTemp hasSuffix:@"]"]){
             stringTemp = [stringTemp stringByReplacingOccurrencesOfString:@"//[" withString:@""];

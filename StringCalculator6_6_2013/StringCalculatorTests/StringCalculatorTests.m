@@ -42,6 +42,7 @@
     
     STAssertEquals([a Add:@"2, 1001"], 2, @"lon hon 1000");
     STAssertEquals([a Add:@"2, 1000"], 1002, @"bang 1000");
+    STAssertEquals([a Add:@"//[*][%]\n1*2%3"], 6, @"nhieu delemeter");
 }
 
 @end
