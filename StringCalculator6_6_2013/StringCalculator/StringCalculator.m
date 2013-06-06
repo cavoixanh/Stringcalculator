@@ -39,8 +39,10 @@
         return 0;
     else{
         for(NSString * str in arr){
-            if([str integerValue] > 0 )
+            if([str integerValue] > 0 && [str integerValue] < 1001)
                 count = count + [str integerValue];
+            else if ([str integerValue] >1000)
+                count = count + 0;
             else if ([str hasPrefix:@"//"] || [str isEqualToString:@""] || [str hasPrefix:@"]"]){
                 count = count + 0;
             }
