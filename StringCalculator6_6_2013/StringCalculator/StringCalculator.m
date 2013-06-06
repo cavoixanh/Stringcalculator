@@ -12,6 +12,16 @@
 
 - (NSInteger) Add:(NSString *)stringAdd{
     
+    if(stringAdd.length >3){
+        NSString *stringTemp = [stringAdd substringToIndex:3];
+        if([stringTemp hasPrefix:@"//"])
+        {
+            NSString *key = [stringTemp substringFromIndex:2];
+            stringAdd = [stringAdd stringByReplacingOccurrencesOfString:key withString:@","];
+        }
+    }
+        
+    
     stringAdd = [stringAdd stringByReplacingOccurrencesOfString:@"\n" withString:@","];
     NSArray *arr = [stringAdd componentsSeparatedByString:@","];
     NSInteger count;
