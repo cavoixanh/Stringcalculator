@@ -12,9 +12,16 @@
 
 - (NSInteger) Add:(NSString *)stringAdd{
     
+    if(stringAdd.length > 7){
+        NSString *stringTemp = [stringAdd substringToIndex:7];
+        if([stringTemp hasPrefix:@"//["] && [stringTemp hasSuffix:@"]"]){
+            stringTemp = [stringTemp stringByReplacingOccurrencesOfString:@"//[" withString:@""];
+            NSString *key = [stringTemp stringByReplacingOccurrencesOfString:@"]" withString:@""];
+            stringAdd = [stringAdd stringByReplacingOccurrencesOfString:key withString:@","];
+        }
+    }
     
-    
-    if(stringAdd.length >3){
+    else if(stringAdd.length >3){
         NSString *stringTemp = [stringAdd substringToIndex:3];
         if([stringTemp hasPrefix:@"//"])
         {
@@ -34,7 +41,7 @@
         for(NSString * str in arr){
             if([str integerValue] > 0  )
                 count = count + [str integerValue];
-            else if ([str isEqualToString:@"//"] || [str isEqualToString:@""]){
+            else if ([str hasPrefix:@"//"] || [str isEqualToString:@""] || [str hasPrefix:@"]"]){
                 count = count + 0;
             }
             else{
