@@ -10,5 +10,5 @@
 
 @interface StringCalculator : NSObject
 
-- (NSInteger) Add:(NSstring *)stringAdd;
+- (NSInteger) Add:(NSString *)stringAdd;
 @end

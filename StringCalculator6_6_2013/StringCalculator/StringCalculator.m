@@ -10,8 +10,10 @@
 
 @implementation StringCalculator
 
-- (NSInteger) Add:(NSstring *)stringAdd{
-
-
+- (NSInteger) Add:(NSString *)stringAdd{
+    if([stringAdd isEqualToString:@""]  || stringAdd.length == 0)
+        return 0;
+    
+    return 0;
 }
 @end
