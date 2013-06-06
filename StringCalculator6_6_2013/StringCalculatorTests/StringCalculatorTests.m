@@ -38,6 +38,9 @@
     STAssertThrows([a Add:@"-2,3"], @"negatives not allowed");
     
     STAssertEquals([a Add:@"//[***]\n1***2***3"], 6, @"delemeter");
+    STAssertEquals([a Add:@"//[###]\n1###2###3"], 6, @"delemeter");
+    
+    STAssertEquals([a Add:@"2, 1001"], 2, @"lon hon 1000");
 }
 
 @end

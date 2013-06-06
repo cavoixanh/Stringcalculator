@@ -39,7 +39,7 @@
         return 0;
     else{
         for(NSString * str in arr){
-            if([str integerValue] > 0  )
+            if([str integerValue] > 0 )
                 count = count + [str integerValue];
             else if ([str hasPrefix:@"//"] || [str isEqualToString:@""] || [str hasPrefix:@"]"]){
                 count = count + 0;
