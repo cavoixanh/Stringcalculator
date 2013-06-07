@@ -35,7 +35,8 @@
     STAssertEquals([a Add:@"1\n2,3"], 6, @"ky tu \n");
     STAssertEquals([a Add:@"//;\n1;2"], 3, @"delemeter");
     STAssertEquals([a Add:@"//#\n1#2"], 3, @"delemeter");
-    //STFail(@"Unit tests are not implemented yet in StringCaculatorTests");
+    
+    STAssertThrows([a Add:@"-1,2"], @"negatives not allowed");
 }
 
 @end
