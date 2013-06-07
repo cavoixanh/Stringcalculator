@@ -12,7 +12,11 @@
 
 - (NSInteger) Add:(NSString*) strAdd{
     
-    if(strAdd.length > 3 && [strAdd hasPrefix:@"//"]){
+    if(strAdd.length> 7 && [strAdd hasPrefix:@"//["]){
+       NSString *key = [strAdd substringWithRange:NSMakeRange(3, 3)];
+        strAdd = [strAdd stringByReplacingOccurrencesOfString:key withString:@","];
+    }
+    else if(strAdd.length > 3 && [strAdd hasPrefix:@"//"]){
         NSString *key = [strAdd substringWithRange:NSMakeRange(2, 1)];
         strAdd = [strAdd stringByReplacingOccurrencesOfString:key withString:@","];
     }
