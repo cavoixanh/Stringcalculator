@@ -12,7 +12,7 @@
 
 - (NSInteger) Add:(NSString*) strAdd{
     
-    
+    strAdd = [strAdd stringByReplacingOccurrencesOfString:@"\n" withString:@","];
     NSInteger count;
     count = 0;
     if(strAdd.length == 0)
