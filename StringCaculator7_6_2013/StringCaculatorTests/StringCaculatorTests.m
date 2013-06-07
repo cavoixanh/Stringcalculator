@@ -32,6 +32,7 @@
     STAssertEquals([a Add:@""], 0, @"string rong");
     STAssertEquals([a Add:@"1,2"], 3, @"string 2 so");
     STAssertEquals([a Add:@"1,2,3"], 6, @"string 3 so");
+    STAssertEquals([a Add:@"1\n2,3"], 6, @"ky tu \n");
     //STFail(@"Unit tests are not implemented yet in StringCaculatorTests");
 }
 
