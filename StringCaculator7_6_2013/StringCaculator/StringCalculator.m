@@ -11,8 +11,14 @@
 @implementation StringCalculator
 
 - (NSInteger) Add:(NSString*) strAdd{
+    if(strAdd.length> 7 && [strAdd hasPrefix:@"//["] && [[strAdd componentsSeparatedByString:@"["] count]>2){
+        NSString *key = [strAdd substringWithRange:NSMakeRange(3, 1)];
+        NSString *key1 = [strAdd substringWithRange:NSMakeRange(6, 1)];
+        strAdd = [strAdd stringByReplacingOccurrencesOfString:key withString:@","];
+        strAdd = [strAdd stringByReplacingOccurrencesOfString:key1 withString:@","];
+    }
     
-    if(strAdd.length> 7 && [strAdd hasPrefix:@"//["]){
+    else if(strAdd.length> 7 && [strAdd hasPrefix:@"//["]){
        NSString *key = [strAdd substringWithRange:NSMakeRange(3, 3)];
         strAdd = [strAdd stringByReplacingOccurrencesOfString:key withString:@","];
     }
