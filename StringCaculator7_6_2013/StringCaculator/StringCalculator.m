@@ -12,6 +12,11 @@
 
 - (NSInteger) Add:(NSString*) strAdd{
     
+    if(strAdd.length > 3 && [strAdd hasPrefix:@"//"]){
+        NSString *key = [strAdd substringWithRange:NSMakeRange(2, 1)];
+        strAdd = [strAdd stringByReplacingOccurrencesOfString:key withString:@","];
+    }
+    
     strAdd = [strAdd stringByReplacingOccurrencesOfString:@"\n" withString:@","];
     NSInteger count;
     count = 0;
