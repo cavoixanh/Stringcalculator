@@ -11,7 +11,8 @@
 @implementation StringCalculator
 
 - (NSInteger) Add:(NSString*) strAdd{
-    
+    if(strAdd.length == 0)
+        return 0;
     
     return 0;
 }
