@@ -23,6 +23,7 @@
 		5B96B41A1761B7CF002068FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B96B3F51761B7CF002068FC /* Foundation.framework */; };
 		5B96B4221761B7D0002068FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B96B4201761B7D0002068FC /* InfoPlist.strings */; };
 		5B96B4251761B7D0002068FC /* StringCaculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B96B4241761B7D0002068FC /* StringCaculatorTests.m */; };
+		5B96B4301761BA05002068FC /* StringCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B96B42F1761BA05002068FC /* StringCalculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		5B96B4211761B7D0002068FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5B96B4231761B7D0002068FC /* StringCaculatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringCaculatorTests.h; sourceTree = "<group>"; };
 		5B96B4241761B7D0002068FC /* StringCaculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringCaculatorTests.m; sourceTree = "<group>"; };
+		5B96B42E1761BA05002068FC /* StringCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringCalculator.h; sourceTree = "<group>"; };
+		5B96B42F1761BA05002068FC /* StringCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringCalculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				5B96B40C1761B7CF002068FC /* StringCalculatorViewController.m */,
 				5B96B40E1761B7CF002068FC /* StringCalculatorViewController.xib */,
 				5B96B3FA1761B7CF002068FC /* Supporting Files */,
+				5B96B42E1761BA05002068FC /* StringCalculator.h */,
+				5B96B42F1761BA05002068FC /* StringCalculator.m */,
 			);
 			path = StringCaculator;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 				5B96B4001761B7CF002068FC /* main.m in Sources */,
 				5B96B4041761B7CF002068FC /* StringCalculatorAppDelegate.m in Sources */,
 				5B96B40D1761B7CF002068FC /* StringCalculatorViewController.m in Sources */,
+				5B96B4301761BA05002068FC /* StringCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +460,7 @@
 				5B96B42A1761B7D0002068FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B96B42B1761B7D0002068FC /* Build configuration list for PBXNativeTarget "StringCaculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +469,7 @@
 				5B96B42D1761B7D0002068FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

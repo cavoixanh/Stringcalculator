@@ -7,6 +7,7 @@
 //
 
 #import "StringCaculatorTests.h"
+#import "StringCalculator.h"
 
 @implementation StringCaculatorTests
 
@@ -26,7 +27,12 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in StringCaculatorTests");
+    StringCalculator *a  =[[StringCalculator alloc] init];
+    
+    STAssertEquals([a Add:@""], 0, @"string rong");
+    STAssertEquals([a Add:@"1,2"], 3, @"string 2 so");
+    STAssertEquals([a Add:@"1,2,3"], 6, @"string 3 so");
+    //STFail(@"Unit tests are not implemented yet in StringCaculatorTests");
 }
 
 @end
