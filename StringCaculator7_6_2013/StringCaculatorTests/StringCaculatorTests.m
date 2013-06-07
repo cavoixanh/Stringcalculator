@@ -48,7 +48,7 @@
     STAssertEquals([a Add:@"//[*][%]\n1*2%3"], 6, @" delemeter");
     STAssertEquals([a Add:@"//[%][*]\n1*2%3"], 6, @" delemeter");
     
-    STAssertEquals([a Add:@"//[%%][**]\n1*2%3"], 6, @" delemeter");
+    STAssertEquals([a Add:@"//[%%][**]\n1**2%%3"], 6, @" delemeter");
 }
 
 @end
