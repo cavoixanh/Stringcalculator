@@ -12,8 +12,21 @@
 
 - (NSInteger) Add:(NSString*) strAdd{
     if(strAdd.length> 7 && [strAdd hasPrefix:@"//["] && [[strAdd componentsSeparatedByString:@"["] count]>2){
-        NSString *key = [strAdd substringWithRange:NSMakeRange(3, 1)];
-        NSString *key1 = [strAdd substringWithRange:NSMakeRange(6, 1)];
+        NSInteger  BCount;
+        NSInteger  ACount;
+        
+        for(int i = 1; i< strAdd.length;i++){
+            NSString * a = [strAdd substringWithRange:NSMakeRange(i, 1)];
+            if( [a isEqualToString:@"["]){
+                BCount = i;
+            }
+            if( [a isEqualToString:@"]"]){
+                ACount = i;
+            }
+        }
+        
+        NSString *key = [strAdd substringWithRange:NSMakeRange(3, (ACount-BCount-1))];
+        NSString *key1 = [strAdd substringWithRange:NSMakeRange(6, (ACount-BCount-1))];
         strAdd = [strAdd stringByReplacingOccurrencesOfString:key withString:@","];
         strAdd = [strAdd stringByReplacingOccurrencesOfString:key1 withString:@","];
     }
