@@ -25,7 +25,14 @@
     else{
         NSArray *arr = [strAdd componentsSeparatedByString:@","];
         for(NSString *str in arr){
-            count = count + [str integerValue];
+            if([str integerValue]>0)
+                count = count + [str integerValue];
+            else if ([str integerValue] < 0){
+                [NSException raise:@"negatives not allowed" format:@"negatives not allowed"];
+            }
+            else{
+                count = count + 0;
+            }
         }
             
         return count;
