@@ -24,9 +24,9 @@
                 ACount = i;
             }
         }
-        
-        NSString *key = [strAdd substringWithRange:NSMakeRange(3, (ACount-BCount-1))];
-        NSString *key1 = [strAdd substringWithRange:NSMakeRange(6, (ACount-BCount-1))];
+        NSInteger a = ACount-BCount-1;
+        NSString *key = [strAdd substringWithRange:NSMakeRange(3, a)];
+        NSString *key1 = [strAdd substringWithRange:NSMakeRange((2+2+a+1), a)];
         strAdd = [strAdd stringByReplacingOccurrencesOfString:key withString:@","];
         strAdd = [strAdd stringByReplacingOccurrencesOfString:key1 withString:@","];
     }
